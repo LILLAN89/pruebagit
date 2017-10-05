@@ -31,6 +31,8 @@
                 function serializar()
                 {                    
                     var data = {};
+                    //Leer formuario
+                    var data = $("#myform").serializeJSON();
 
 
 
@@ -42,8 +44,7 @@
                     console.log(data.email);
                     console.log(data.password);
                     */
-
-                    console.log();
+                    console.log(data);
 
                     //Forma llena
                     if (data.nombre !== "" && data.telefono !== "" && data.email !== "" && data.password !== "") {
