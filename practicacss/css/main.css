@@ -1,0 +1,28 @@
+h1.titulos {
+	color: #a0c3f8;
+	font-size: 35px;
+	marker-end: 20em;
+}
+
+h2.subtitulos {
+	color: #a0c3f8;
+	font-family: verdana;
+}
+p.cursiva {
+	font-style: oblique;
+}
+a {
+	color: red;
+}
+span.caracteristicas {
+	color: yellow;
+}
+body{
+	background-color: gray;
+	color: white;
+	font-family: verdana;
+	font-size: 12px;
+}
+span.descripcion {
+	font-style: oblique;
+}
