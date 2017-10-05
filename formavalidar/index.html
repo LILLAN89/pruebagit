@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <!-- Incluimos la biblioteca jquery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!-- Incluimos un archivo local para obtener el json del formulario -->
+            <script type="text/javascript" src="js/jquery.serializejson.js"></script>
+            <title>Mi primer App Web</title>
+    </head>
+    <body>
+        <h1>Create an account</h1>
+        <div>
+            <form id="myform" action="" method="post">
+                <p>nombre: <input type="text" placeholder="ingrese nombre" id="nombre" name="nombre" required/></p>
+                <p>telefono: <input type="tel" placeholder="phone number" id="telefono" name="telefono" required/></p>
+                <p>email: <input type="email" placeholder="Escriba un email válido" id="email" name="email" required/></p>
+                <p>pasword: <input type="pasword" placeholder="Escriba un email válido" id="password" name="password" required/></p>
+                <input type="checkbox" id="acepta"> Acepto los términos
+                <br>
+                <button id="boton" onclick="serializar()" >Click</button>
+            </form>    
+        </div>
+    
+        
+ 
+            <script>
+                 console.log($('#acepta').attr("id"));
+                console.log($('#acepta').attr("checked"));
+                $('#acepta').attr("checked", true);
+                function serializar()
+                {                    
+                    var data = {};
+
+
+
+                    //console.log(data);
+
+                    /*
+                    console.log(data.nombre);
+                    console.log(data.telefono);
+                    console.log(data.email);
+                    console.log(data.password);
+                    */
+
+                    console.log();
+
+                    //Forma llena
+                    if (data.nombre !== "" && data.telefono !== "" && data.email !== "" && data.password !== "") {
+                        //Acepto terminos
+                        if( $('#acepta').is(':checked') ) {
+                            alert(
+                                "Nombre: " + data.nombre + "<br>" +
+                                "Telefono: " + data.telefono + "<br>" +
+                                "Email: " + data.email + "<br>" +
+                                "Password: " + data.password
+                            );
+                        //no acepto terminos 
+                        } else {
+                            alert("Tienes que aceptar los terminos")
+                        }
+                    //Forma no llena
+                    } else {
+                        alert("Faltan campos de llenar")
+                    }
+                    /**/
+                                         
+                }
+            </script>
+    </body>
+</html>
+
+
