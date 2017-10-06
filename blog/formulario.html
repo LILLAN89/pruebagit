@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>formulario</title>
+	</head>
+	<body>
+		<form method="get">
+			<p>tel: <input type="tel" placeholder="ingresa un telefono" /></p>
+			<p>search: <input type="search" placeholder="ingresa una palabra" /></p>
+			<p>url: <input type="url" placeholder="type la url" /></p>
+			<p>email: <input type="email" required /></p>
+			<p>date: <input type="date" /></p>
+			<p>month: <input type="month" /></p>
+			<p>week: <input type="week" autofocus/></p>
+			<p>time: <input type="time" /></p>	
+			<p>number: <input type="number" max="10" min="0" value="3"/></p>
+			<p>range: <input type="range" max="10" min="0" value="3"/></p>
+			<p>color: <input type="color" /></p>
+			<p>datetime-local: <input type="datetime-local" autofocus /></p>
+			<p>textarea: <textarea autocomplete="on" /></textarea>
+  			<input type="submit">
+		</form>
+
+		<p contenteditable="true">Hola</p>
+		<p contenteditable="false">intentalo</p>
+
+		<div>
+			<form method="get">
+  				<input list="browsers" name="browser">
+  				<datalist id="browsers">
+    				<option value="Internet Explorer">
+    				<option value="Firefox">
+    				<option value="Chrome">
+    				<option value="Opera">
+    				<option value="Safari">
+  				</datalist>
+  				<input type="submit">
+			</form>
+		</div>
+	</body>
+</html>
