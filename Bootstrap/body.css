@@ -1,0 +1,9 @@
+.body{ 
+    background-color: darkgray;
+    color: white;
+}
+.row{
+    background: linear-gradient(black, black, darkgray);
+    margin-top: 30px;
+}
+
